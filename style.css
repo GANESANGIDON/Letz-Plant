@@ -331,9 +331,14 @@ footer {
 /* social links container division */
 .social-container-division {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 3px 0px;
+}
+
+/* footer site brand */
+.social-container-division .brand-container{
+  display: none;
 }
 
 /* social links container span text */
@@ -394,7 +399,7 @@ footer {
   text-decoration: none;
   text-transform: capitalize;
   color: var(--greyTxt);
-  font: var(--normalTxt);
+  font: var(--normalFont);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -450,6 +455,10 @@ footer {
 
   .social-container-division {
     gap: 10px;
+  }
+
+  .social-container-division .brand-container{
+    display: inline-block;
   }
 }
 
@@ -521,6 +530,7 @@ footer {
   .social-container-division {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 8px;
   }
 
